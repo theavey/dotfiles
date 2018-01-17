@@ -1,0 +1,8 @@
+# Ignore everything except bash files
+/**
+!.bash*
+# and except vmdrc customization file
+!.vmdrc
+
+# Ignore bash history
+.bash_history

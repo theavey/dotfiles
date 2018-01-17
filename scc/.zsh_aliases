@@ -1,0 +1,23 @@
+# alias to easily add aliases
+alias realias='$EDITOR ~/.dotfiles/scc/.zsh_aliases; source ~/.zshrc'
+alias resource='source ~/.zshrc'
+
+alias wj='watch qstat -r -u theavey'
+alias wjb='watch qstat -u theavey'
+alias wjg='watch qstat -u theavey,jmortiz,mlee03,bmatt,justinap,coker,ahino16,makumar,fsegatta,alamonda'
+
+alias cdnbth='cd /projectnb/nonadmd/theavey'
+
+alias subg='python ~/scripts/submit_gaussian.py'
+alias psumh='mpirun -n 1 plumed sum_hills -hills HILLS'
+
+alias shelli='source ~/.iterm2_shell_integration.zsh'
+
+alias lh='ls -lrth'
+alias la='ls -A'
+
+alias charmm='~/charmm-base/exec/gnu_M/charmm'
+
+alias cqs='qstat -g c -q a,u,ccs,ccs-pub'
+
+export nbth=/projectnb/nonadmd/theavey
