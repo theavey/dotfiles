@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectPreferences>
+<DefaultUser>theavey</DefaultUser>
+<DefaultSecondUser></DefaultSecondUser>
+<ClientCertificateThumbprint>6A7FF26767C1B6C46E08B43F13B6B94C6A55D6FC</ClientCertificateThumbprint>
+<MultipleClientCertificateThumbprints></MultipleClientCertificateThumbprints>
+<ServerCertificateThumbprint>E7DFE0052012C45A0C35D53C7A3092CD54A75283</ServerCertificateThumbprint>
+<DefaultHostName>BU VPN (vpn.bu.edu)</DefaultHostName>
+<DefaultHostAddress></DefaultHostAddress>
+<DefaultGroup>1-Tunnel-Caltech-Traffic-Only</DefaultGroup>
+<ProxyHost></ProxyHost>
+<ProxyPort></ProxyPort>
+<SDITokenType></SDITokenType>
+<ControllablePreferences>
+<AutoConnectOnStart>true</AutoConnectOnStart></ControllablePreferences>
+</AnyConnectPreferences>
