@@ -1,0 +1,14 @@
+# alias to easily add aliases
+alias realias='$EDITOR ~/.dotfiles/.zsh_aliases; source ~/.zshrc'
+
+alias vpn='/opt/cisco/anyconnect/bin/vpn'
+alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
+
+alias seeding='transmission-remote -l | grep Seeding'
+alias tlist='transmission-remote -l'
+
+alias open='xdg-open'
+
+alias lh='ls -lrth'
+alias la='ls -A'
+

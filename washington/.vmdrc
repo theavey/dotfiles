@@ -1,0 +1,19 @@
+# vmdrc file is loaded whenever VMD is started and can contain customizations
+# and such.
+
+# menu tkcon on
+menu main on
+
+# make left and right arrow keys step through frames:
+user add key Right {animate next}
+user add key Left {animate prev}
+
+# From https://github.com/chrismacdermaid/.vmd.d/blob/master/.vmdrc 
+# (hopefully turns tkcon on, actually)
+after idle {
+
+    if {![info exists env(VMDTEXT)]} {
+        menu tkcon on
+    }
+}
+
