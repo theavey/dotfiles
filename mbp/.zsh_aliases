@@ -1,5 +1,5 @@
 # alias to easily add aliases
-alias realias='$EDITOR ~/.dotfiles/.zsh_aliases; source ~/.zshrc'
+alias realias='$EDITOR ~/.dotfiles/mbp/.zsh_aliases; source ~/.zshrc'
 
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
