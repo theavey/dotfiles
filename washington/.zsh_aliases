@@ -12,3 +12,6 @@ alias open='xdg-open'
 alias lh='ls -lrth'
 alias la='ls -A'
 
+# start iterm2 shell integration
+alias shelli='source ~/.iterm2_shell_integration.zsh'
+
