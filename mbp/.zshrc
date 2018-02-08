@@ -130,8 +130,8 @@ export EDITOR="/usr/bin/vim"
 # R allows escapes to pass (for colors? helps with git diff?)
 export LESS="-WNiXR"
 
-if [ -f ~/.dotfiles/.zsh_aliases ]; then
-    . ~/.dotfiles/.zsh_aliases
+if [ -f ~/.dotfiles/mbp/.zsh_aliases ]; then
+    . ~/.dotfiles/mbp/.zsh_aliases
 fi
 
 # Speed up zsh completions (via https://coderwall.com/p/9fksra/speed-up-your-zsh-completions) 
