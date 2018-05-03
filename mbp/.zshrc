@@ -165,3 +165,6 @@ source ~/.iterm2_shell_integration.zsh
 # (installed with brew)
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
+# added by travis gem
+[ -f /Users/theavey/.travis/travis.sh ] && source /Users/theavey/.travis/travis.sh
