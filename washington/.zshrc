@@ -153,3 +153,6 @@ bindkey '^[[1;5C' forward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 
+
+# added by travis gem
+[ -f /home/theavey/.travis/travis.sh ] && source /home/theavey/.travis/travis.sh

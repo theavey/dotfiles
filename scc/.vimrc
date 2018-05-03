@@ -31,4 +31,7 @@ filetype plugin indent on
 " Make backspace to work as more often is expected
 set backspace=indent,eol,start
 
+" Make tab completion in a command more BASH-like
+set wildmode=longest,list,full
+set wildmenu
 
