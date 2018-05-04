@@ -1,0 +1,11 @@
+# Default Requests File
+
+# Email address for status updates
+-M theavey@bu.edu
+
+# Send emails on end and abort, I believe
+-m ea
+
+# Combine stdout and stderr to one file
+-j y
+
