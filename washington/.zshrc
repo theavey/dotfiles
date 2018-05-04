@@ -147,8 +147,8 @@ bindkey '^[[A' history-beginning-search-backward
 bindkey '^[[B' history-beginning-search-forward
 
 # Scroll by words on command-line
-bindkey '^[[1;5D' backward-word
-bindkey '^[[1;5C' forward-word
+bindkey '^[OD' backward-word
+bindkey '^[OC' forward-word
 # Skip to beginning/end of line:
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
