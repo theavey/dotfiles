@@ -18,6 +18,6 @@ alias la='ls -A'
 
 alias charmm='~/charmm-base/exec/gnu_M/charmm'
 
-alias cqs='qstat -g c -q a,u,ccs,ccs-pub,p16,onrcc-pub,p8'
+alias cqs='qstat -g c -q a,a128,u,ccs,ccs-pub,p16,onrcc-pub,p8'
 
 export nbth=/projectnb/nonadmd/theavey
