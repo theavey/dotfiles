@@ -20,4 +20,6 @@ alias charmm='~/charmm-base/exec/gnu_M/charmm'
 
 alias cqs='qstat -g c -q a,a128,u,ccs,ccs-pub,p16,onrcc-pub,p8'
 
+alias cpe224='qalter -pe mpi_28_tasks_per_node_\? 224 '
+
 export nbth=/projectnb/nonadmd/theavey
