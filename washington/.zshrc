@@ -129,7 +129,9 @@ compinit conda
 export PATH="/home/theavey/anaconda3/bin:$PATH"
 
 # add LaTeX to path:
-export PATH="/usr/local/texlive/2016/bin/x86_64-linux:$PATH"
+export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
+export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/local/texlive/2018/texmf-dist/doc/info:$INFOPATH"
 
 # Set default editor to vim
 export EDITOR="/usr/bin/vim"
