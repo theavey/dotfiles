@@ -155,6 +155,22 @@ bindkey '^[OC' forward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 
-
 # added by travis gem
 [ -f /home/theavey/.travis/travis.sh ] && source /home/theavey/.travis/travis.sh
+
+# function(s) to keep environment variables up to date in tmux
+# via https://babushk.in/posts/renew-environment-tmux.html
+function refresh () { 
+  if [ -n "$TMUX" ]; then
+    export $(tmux show-environment | grep "^SSH_AUTH_SOCK")
+    export $(tmux show-environment | grep "^DISPLAY")
+  fi 
+}
+
+# Should run every before every execution?
+
+function preexec {
+    refresh
+}
+
+
