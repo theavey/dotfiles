@@ -5,6 +5,12 @@ alias resource='source ~/.zshrc'
 alias wj='watch qstat -r -u theavey'
 alias wjb='watch qstat -u theavey'
 alias wjg='watch qstat -u theavey,jmortiz,mlee03,bmatt,justinap,coker,ahino16,makumar,fsegatta,alamonda'
+alias wqs='watch qstat -g c -q a,u,ccs,ccs-pub,p16,onrcc-pub,p8,a128 '
+
+alias j='qstat -r -u theavey'
+alias jb='qstat -u theavey'
+alias jg='qstat -u theavey,jmortiz,mlee03,bmatt,justinap,coker,ahino16,makumar,fsegatta,alamonda'
+alias cqs='qstat -g c -q a,a128,u,ccs,ccs-pub,p16,onrcc-pub,p8'
 
 alias cdnbth='cd /projectnb/nonadmd/theavey'
 
@@ -18,8 +24,7 @@ alias la='ls -A'
 
 alias charmm='~/charmm-base/exec/gnu_M/charmm'
 
-alias cqs='qstat -g c -q a,a128,u,ccs,ccs-pub,p16,onrcc-pub,p8'
-
 alias cpe224='qalter -pe mpi_28_tasks_per_node_\? 224 '
+alias cpe112='qalter -pe mpi_28_tasks_per_node_\? 112 '
 
 export nbth=/projectnb/nonadmd/theavey
