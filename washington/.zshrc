@@ -125,8 +125,9 @@ fpath+=/usr/share/zsh/functions/Completion/custom
 # This includes a completion for conda from https://github.com/esc/conda-zsh-completion
 compinit conda
 
-# added by Anaconda3 4.1.1 installer
-export PATH="/home/theavey/anaconda3/bin:$PATH"
+# start conda and put it in path
+. /home/theavey/anaconda3/etc/profile.d/conda.sh
+conda activate
 
 # add LaTeX to path:
 export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
