@@ -1,3 +1,3 @@
 # zsh configuration file for Gromacs
 # only kept for backwards compatibility
-source /usr/local/Cellar/gromacs/2018.2/bin/GMXRC.bash
+source /share/pkg/gromacs/2016.3/install/bin/GMXRC.bash
