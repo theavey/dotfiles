@@ -120,9 +120,6 @@ bindkey -v
 # added by Anaconda3 4.1.1 installer
 path+="/Users/theavey/anaconda3/bin"
 
-# add LaTeX to path:
-path=("/usr/local/texlive/2016/bin/x86_64-linux" $path)
-
 # Set default editor to vim
 export EDITOR="/usr/bin/vim"
 
@@ -165,6 +162,6 @@ source ~/.iterm2_shell_integration.zsh
 # (installed with brew)
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # added by travis gem
 [ -f /Users/theavey/.travis/travis.sh ] && source /Users/theavey/.travis/travis.sh
+
