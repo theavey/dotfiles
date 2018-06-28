@@ -29,3 +29,6 @@ alias cpe112='qalter -pe mpi_28_tasks_per_node_\? 112 '
 alias cpe128='qalter -pe mpi_16_tasks_per_node_\? 128 '
 
 export nbth=/projectnb/nonadmd/theavey
+export gpx=/projectnb/nonadmd/theavey/GPX-project
+export gpxd=~gpx/03-DFT
+
