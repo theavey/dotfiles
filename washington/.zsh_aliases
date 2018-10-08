@@ -7,6 +7,7 @@ alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
 alias seeding='transmission-remote -l | grep Seeding'
 alias tlist='transmission-remote -l'
 alias tmr='transmission-remote '
+alias wtlist='watch "transmission-remote -l | tail"'
 
 alias open='xdg-open'
 
