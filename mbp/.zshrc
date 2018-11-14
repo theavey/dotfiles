@@ -117,8 +117,8 @@ unsetopt extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-# added for Anaconda3 > 4.4
-. /Users/theavey/anaconda3/etc/profile.d/conda.sh
+# added for Anaconda3 > 5.3
+. /usr/local/anaconda3/etc/profile.d/conda.sh
 
 # Set default editor to vim
 export EDITOR="/usr/bin/vim"
