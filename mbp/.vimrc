@@ -24,3 +24,7 @@
 " Make backspace to work as more often is expected
 :set backspace=indent,eol,start
 
+" Show tab characters explicitly
+:set list
+:set listchars=tab:␉·,eol:⏎,trail:␠,nbsp:⎵
+
