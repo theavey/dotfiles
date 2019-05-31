@@ -51,7 +51,7 @@ ZSH_THEME="flazz-t"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,vi-mode)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +103,7 @@ zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p
 zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*' substitute 1
 zstyle ':completion:*' verbose true
-zstyle :compinstall filename '/home/theavey/.zshrc'
+zstyle :compinstall filename '/usr3/graduate/theavey/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -178,7 +178,7 @@ module unload cuda/5.0  # because loaded before in some current sessions
 module load cuda/8.0
 module load gromacs/2016.3
 # newer Gaussian
-module load gaussian/16.A.03
+module load gaussian/16.B.01
 
 # function(s) to keep environment variables up to date in tmux
 # via https://babushk.in/posts/renew-environment-tmux.html
@@ -219,4 +219,7 @@ compinit conda
 export GOPATH="$HOME/gopath"
 path+=$GOPATH
 path+=$GOPATH/bin
+
+# undo last text command
+bindkey '^Z' undo
 
