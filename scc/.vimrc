@@ -1,5 +1,5 @@
 " Use pathogen to help with vim packages
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " Should enable mouse integration
 :set mouse=a
@@ -34,4 +34,14 @@ set backspace=indent,eol,start
 " Make tab completion in a command more BASH-like
 set wildmode=longest,list,full
 set wildmenu
+
+" Setup UltiSnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsListSnippets = '<c-l>'
+
+" Show tab characters explicitly
+set list
+set listchars=tab:>-
 
