@@ -51,7 +51,7 @@ ZSH_THEME="flazz"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,vi-mode)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -150,8 +150,8 @@ bindkey '^[[A' history-beginning-search-backward
 bindkey '^[[B' history-beginning-search-forward
 
 # Scroll by words on command-line
-bindkey '^[OD' backward-word
-bindkey '^[OC' forward-word
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1:5C' forward-word
 # Skip to beginning/end of line:
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
