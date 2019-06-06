@@ -28,3 +28,13 @@
 :set list
 :set listchars=tab:␉·,eol:⏎,trail:␠,nbsp:⎵
 
+" Setup UltiSnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsListSnippets = '<c-l>'
+
+" Make tab completion in a command more BASH-like
+set wildmode=longest,list,full
+set wildmenu
+
