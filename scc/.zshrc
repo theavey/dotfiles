@@ -159,6 +159,14 @@ path+=/usr3/graduate/theavey/scripts/bin
 path+=/usr3/graduate/theavey/.local/bin
 
 # Load modules
+## openbabel:
+#module load python3/3.6.5  # might conflict with Anaconda
+#module load wxwidgets/3.0.4
+#module load openbabel/2.4.1
+#module unload python3  # does conflict with Anaconda
+# changed because installed openbabel with conda
+
+# general
 module load go
 module load git
 module use /share/module/staging/by_username/lshekter
@@ -166,27 +174,31 @@ module use /share/module/staging/by_username/lshekter
 #module load plumed/2.1.0
 module load tmux
 module load vmd
-module load anaconda3
+#module load anaconda3
+# using the newer miniconda since I use my own environments anyway
+module load miniconda
 module load vim
-# openbabel:
-module load wxwidgets/3.0.2
-module load openbabel/2.4.1
+
 # newer gromacs:
-module load gcc/4.9.2
-module load openmpi/1.6.4_gcc4.8.1
-module unload cuda/5.0  # because loaded before in some current sessions
-module load cuda/8.0
-module load gromacs/2016.3
+module load gcc/5.5.0
+module load openmpi/3.1.1
+module load cuda/9.2
+#module load gromacs/2016.3  # doesn't exist now
+module load gromacs/2018.3  # should work?
+
 # newer Gaussian
 module load gaussian/16.B.01
 
+
 # function(s) to keep environment variables up to date in tmux
 # via https://babushk.in/posts/renew-environment-tmux.html
-function refresh () { 
+function refresh () {
   if [ -n "$TMUX" ]; then
-    export $(tmux show-environment | grep "^SSH_AUTH_SOCK")
-    export $(tmux show-environment | grep "^DISPLAY")
-  fi 
+    # export $(tmux show-environment | grep "^SSH_AUTH_SOCK")
+    # export $(tmux show-environment | grep "^DISPLAY")
+    eval $(tmux show-environment -s SSH_AUTH_SOCK)
+    eval $(tmux show-environment -s DISPLAY)
+  fi
 }
 
 # Should run every before every execution?
