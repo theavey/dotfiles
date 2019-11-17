@@ -4,7 +4,7 @@ alias resource='source ~/.zshrc'
 
 alias wj='watch qstat -r -u theavey'
 alias wjb='watch qstat -u theavey'
-alias wjg='watch qstat -u theavey,jmortiz,mlee03,bmatt,justinap,coker,ahino16,makumar,fsegatta,alamonda,eyfeng,jtmarasc'
+alias wjg='watch qstat -u theavey,jmortiz,mlee03,bmatt,justinap,coker,ahino16,makumar,fsegatta,alamonda,eyfeng,jtmarasc,emodom,kisahak'
 alias wqs='watch -n 30 -d qstat -g c -q a,u,ccs,ccs-pub,p16,onrcc-pub,p8,a128 '
 
 alias j='qstat -r -u theavey'
