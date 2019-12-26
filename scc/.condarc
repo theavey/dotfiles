@@ -2,3 +2,11 @@ channels:
   - conda-forge
   - omnia
   - defaults
+
+envs_dirs:
+  - ~/anaconda_envs
+  - ~/.conda/envs
+  - /share/pkg.7/miniconda/4.7.5/install/envs
+
+env_prompt: '({name}) '
+
