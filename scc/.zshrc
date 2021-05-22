@@ -173,11 +173,15 @@ module use /share/module/staging/by_username/lshekter
 #module load cuda/5.0
 #module load plumed/2.1.0
 module load tmux
-module load vmd
 #module load anaconda3
 # using the newer miniconda since I use my own environments anyway
 module load miniconda
 module load vim
+
+# vmd stuff
+module load intel/2019
+module load netcdf/4.6.1_intel-2019
+module load vmd
 
 # newer gromacs:
 module load gcc/5.5.0
