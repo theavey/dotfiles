@@ -1,0 +1,10 @@
+# alias to easily add aliases
+alias realias='$EDITOR ~/dotfiles/north-carolina/zsh_aliases; source ~/.zshrc'
+
+alias lh='ls -lrth'
+alias la='ls -A'
+
+# start iterm2 shell integration
+# not currently setup, afaik
+#alias shelli='source ~/.iterm2_shell_integration.zsh'
+
